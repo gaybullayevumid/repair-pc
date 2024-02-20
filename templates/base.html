@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>repair-pc</title>
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <!-- Responsive stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="{% static 'images/favicon/apple-touch-icon.png' %}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="{% static 'images/favicon/favicon-32x32.png' %}"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="{% static 'images/favicon/favicon-16x16.png' %}"
+      sizes="16x16"
+    />
+  </head>
+  <body>
+    {% include "layouts/header.html" %}
+    {% block home %}{% endblock home %}
+    {% block about %}{% endblock about %}
+    {% block service %}{% endblock service %}
+    {% include "layouts/footer.html" %}
+
+    <!-- main jQuery /-->
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <!-- jQuery plugins /-->
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <!-- jQuery meanmenu /-->
+    <script src="{% static 'js/jquery.meanmenu.js' %}"></script>
+    <!-- bootstrap /-->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!-- bx slider /-->
+    <script src="{% static 'js/jquery.bxslider.min.js' %}"></script>
+    <!-- count to /-->
+    <script src="{% static 'js/jquery.countTo.js' %}"></script>
+    <!-- owl carousel /-->
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <!-- validate /-->
+    <script src="{% static 'js/validation.js' %}"></script>
+    <!-- mixit up /-->
+    <script src="{% static 'js/jquery.mixitup.min.js' %}"></script>
+    <!-- easing /-->
+    <script src="{% static 'js/jquery.easing.min.js' %}"></script>
+    <!-- gmap helper /-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHzPSV2jshbjI8fqnC_C4L08ffnj5EN3A"></script>
+    <!--gmap script /-->
+    <script src="{% static 'js/gmaps.js' %}"></script>
+    <script src="{% static 'js/map-helper.js' %}"></script>
+    <!-- fancy box /-->
+    <script src="{% static 'js/jquery.fancybox.pack.js' %}"></script>
+    <script src="{% static 'js/jquery.appear.js' %}"></script>
+    <!-- isotope script /-->
+    <script src="{% static 'js/isotope.js' %}"></script>
+    <script src="{% static 'js/jquery.prettyPhoto.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/jquery.bootstrap-touchspin.js' %}"></script>
+
+    <!-- jQuery ui js /-->
+    <script src="{% static 'js/jquery-ui.js' %}"></script>
+    <script src="{% static 'js/SmoothScroll.js' %}"></script>
+    <script src="{% static 'js/validation.js' %}"></script>
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <!-- thm custom script /-->
+    <script src="{% static 'js/custom.js' %}"></script>
+  </body>
+</html>

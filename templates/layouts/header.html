@@ -1,0 +1,187 @@
+{% load static %}
+  <!--Start Top bar area -->
+  <div class="top-bar-area">
+    <div class="container">
+      <div class="clearfix">
+        <div class="pull-left">
+          <p>Welcome to services digital repair store</p>
+        </div>
+        <div class="pull-right">
+          <p><i class="fa fa-clock-o"></i>Monday - Saturday : 9:00 to 19:00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End Top bar area -->
+
+  <!--Start header area-->
+  <header class="header-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12">
+          <div class="logo">
+            <a href="index.html">
+              <img src="{% static 'images/logo/logo.png' %}" alt="Logo" />
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-9 col-sm-12 col-xs-12">
+          <div class="header-contact-info">
+            <ul>
+              <li>
+                <div class="iocn-holder">
+                  <span class="icon-technology-1"></span>
+                </div>
+                <div class="text-holder">
+                  <h6>Need help?</h6>
+                  <p>1-800-1234-56798</p>
+                </div>
+              </li>
+              <li>
+                <div class="iocn-holder">
+                  <span class="icon-email-filled-closed-envelope"></span>
+                </div>
+                <div class="text-holder mail-holder">
+                  <h6>Mail Us @</h6>
+                  <a href="#"><p>services@gmail.com</p></a>
+                </div>
+              </li>
+              <li>
+                <div class="link_btn float_right">
+                  <a href="contact.html" class="thm-btn bg-clr1"
+                    >Make An Appointment</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--End header area-->
+
+  <!--Start mainmenu area-->
+  <div class="mainmenu-area stricky">
+    <div class="container">
+      <div class="mainmenu-bg">
+        <div class="row">
+          <div class="col-md-9 col-sm-12 col-xs-12">
+            <!--Start mainmenu-->
+            <nav class="main-menu">
+              <div class="navbar-collapse collapse clearfix">
+                <ul class="navigation clearfix">
+                  <li class="active">
+                    <a href="{% url 'home' %}">home</a>
+                    <ul>
+                      <li><a href="index.html">Repair Demo</a></li>
+                      <li><a href="index-2.html">Cleaning Demo</a></li>
+                      <li><a href="#">More Demo Coming</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="{% url 'about' %}">About us</a></li>
+                  <li><a href="{% url 'service' %}">Services</a></li>
+                  <li>
+                    <a href="blog.html">Latest News</a>
+                    <ul>
+                      <li><a href="blog.html">Blog Default</a></li>
+                      <li><a href="blog-single.html">Blog Single Post</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="project.html">project</a>
+                    <ul>
+                      <li><a href="project.html">Our project</a></li>
+                      <li><a href="single-project.html">Single Project</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="team.html">Pages</a>
+                    <ul>
+                      <li><a href="about.html">About us</a></li>
+                      <li><a href="team.html">Our Team</a></li>
+                      <li><a href="price.html">Our Price</a></li>
+                      <li><a href="faq.html">FAQ's</a></li>
+                      <li><a href="404.html">404 Page</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+            </nav>
+            <!--End mainmenu-->
+            <!-- mobile-menu -->
+            <div class="services-mobile-menu visible-xs">
+              <nav id="mobile-nav">
+                <ul>
+                  <li class="active">
+                    <a href="{% url 'home' %}">home</a>
+                    <ul>
+                      <li><a href="index.html">Repair Demo</a></li>
+                      <li><a href="index-2.html">Cleaning Demo</a></li>
+                      <li><a href="#">More Demo Coming</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="{% url 'about' %}">About us</a></li>
+                  <li><a href="{% url 'service' %}">Services</a></li>
+                  <li>
+                    <a href="blog.html">Latest News</a>
+                    <ul>
+                      <li><a href="blog.html">Blog Default</a></li>
+                      <li><a href="blog-single.html">Blog Single Post</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="project.html">project</a>
+                    <ul>
+                      <li><a href="project.html">Our project</a></li>
+                      <li><a href="single-project.html">Single Project</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="team.html">Pages</a>
+                    <ul>
+                      <li><a href="{% url 'about' %}">About us</a></li>
+                      <li><a href="team.html">Our Team</a></li>
+                      <li><a href="price.html">Our Price</a></li>
+                      <li><a href="faq.html">FAQ's</a></li>
+                      <li><a href="404.html">404 Page</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="right-column">
+          <div class="right-area">
+            <div class="nav_side_content">
+              <div class="search_option">
+                <button
+                  class="search tran3s dropdown-toggle color1_bg"
+                  id="searchDropdown"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+                <form
+                  action="#"
+                  class="dropdown-menu"
+                  aria-labelledby="searchDropdown"
+                >
+                  <input type="text" placeholder="Search..." />
+                  <button>
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End mainmenu area-->
