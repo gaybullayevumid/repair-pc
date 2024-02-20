@@ -11,3 +11,6 @@ class AboutPageView(TemplateView):
 
 class ServicePageView(TemplateView):
     template_name = 'pages/service.html'
+
+class BlogPageView(TemplateView):
+    template_name = 'pages/blog.html'

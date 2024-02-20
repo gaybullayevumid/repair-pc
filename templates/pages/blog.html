@@ -1,5 +1,525 @@
 {% extends "base.html" %}
 {% load static %}
 {% block blog %}
+<!-- PRELOADER -->
+<div class="page-loader">
+    <div class="loader">Loading...</div>
+  </div>
+  <!-- /PRELOADER -->
+  <div class="boxed_wrapper">
+    <!--Start breadcrumb area-->
+    <div
+      class="breadcrumb-area"
+      style="background-image: url({% static 'images/background/3.jpg' %})"
+    >
+      <div class="container text-center">
+        <h1>Blog</h1>
+        <div class="breadcrumbs_path">
+          <a href="#">Home</a>&nbsp;&nbsp;-&nbsp;&nbsp;Blog
+        </div>
+      </div>
+    </div>
+    <!--End breadcrumb area-->
 
+    <div id="blog-area" class="blog-with-sidebar-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
+            <div class="blog-post">
+              <!--Start single latest blog-->
+              <div class="single-blog-post">
+                <div class="img-holder">
+                  <a href="blog-single.html"
+                    ><img src="{% static 'images/blog/b1.jpg' %}" alt="Awesome Image"
+                  /></a>
+                  <div class="published-date">
+                    <h3>21 Aug</h3>
+                  </div>
+                </div>
+                <div class="text-holder">
+                  <a href="blog-single.html">
+                    <h3 class="blog-title">
+                      Game discs and game console ports
+                    </h3>
+                  </a>
+                  <div class="meta-info clearfix">
+                    <div class="left pull-left">
+                      <ul class="post-info">
+                        <li>
+                          <i class="fa fa-user" aria-hidden="true"></i> By
+                          <a href="#">Maxhove</a>
+                        </li>
+                        <li>
+                          <i class="fa fa-folder-open" aria-hidden="true"></i>
+                          <a href="#">Console</a>
+                        </li>
+                        <li>
+                          <i class="fa fa-comments" aria-hidden="true"></i>
+                          <a href="#">11 Comments</a>
+                        </li>
+                        <li>
+                          <i class="fa fa-heart" aria-hidden="true"></i>
+                          <a href="#">12 Likes</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <p>
+                      Come aboard were expecting you. Love life's sweetest
+                      reward Let it flow it floats back to you. Sunday Monday
+                      Happy Days. Tuesday Wednesday Happy Days. Thursday
+                      Friday Happy Days.Saturday what a day all week with you.
+                    </p>
+                    <a href="blog-single.html"> Read More </a>
+                  </div>
+                </div>
+              </div>
+              <!--End single latest blog-->
+
+              <!--Start single latest blog-->
+              <div class="single-blog-post">
+                <div class="img-holder">
+                  <a href="blog-single.html"
+                    ><img src="{% static 'images/blog/b2.jpg' %}" alt="Awesome Image"
+                  /></a>
+                  <div class="published-date">
+                    <h3>15 Oct</h3>
+                  </div>
+                </div>
+                <div class="text-holder">
+                  <a href="blog-single.html">
+                    <h3 class="blog-title">
+                      Magnets and electric devices – Lost data
+                    </h3>
+                  </a>
+                  <div class="meta-info clearfix">
+                    <div class="left pull-left">
+                      <ul class="post-info">
+                        <li>
+                          <i class="fa fa-user" aria-hidden="true"></i> By
+                          <a href="#">Maxhove</a>
+                        </li>
+                        <li>
+                          <i class="fa fa-folder-open" aria-hidden="true"></i>
+                          <a href="#">electric</a>
+                        </li>
+                        <li>
+                          <i class="fa fa-comments" aria-hidden="true"></i>
+                          <a href="#">21 Comments</a>
+                        </li>
+                        <li>
+                          <i class="fa fa-heart" aria-hidden="true"></i>
+                          <a href="#">24 Likes</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <p>
+                      Come aboard were expecting you. Love life's sweetest
+                      reward Let it flow it floats back to you. Sunday Monday
+                      Happy Days. Tuesday Wednesday Happy Days. Thursday
+                      Friday Happy Days.Saturday what a day all week with you.
+                    </p>
+                    <a href="blog-single.html"> Read More </a>
+                  </div>
+                </div>
+              </div>
+              <!--End single latest blog-->
+
+              <!--Start single latest blog-->
+              <div class="single-blog-post">
+                <div class="img-holder">
+                  <a href="blog-single.html"
+                    ><img src="{% static 'images/blog/b3.jpg' %}" alt="Awesome Image"
+                  /></a>
+                  <div class="published-date">
+                    <h3>10 Jun</h3>
+                  </div>
+                </div>
+                <div class="text-holder">
+                  <a href="blog-single.html">
+                    <h3 class="blog-title">Recovering data from SIM card</h3>
+                  </a>
+                  <div class="meta-info clearfix">
+                    <div class="left pull-left">
+                      <ul class="post-info">
+                        <li>
+                          <i class="fa fa-user" aria-hidden="true"></i> By
+                          <a href="#">Maxhove</a>
+                        </li>
+                        <li>
+                          <i class="fa fa-folder-open" aria-hidden="true"></i>
+                          <a href="#">Recovering</a>
+                        </li>
+                        <li>
+                          <i class="fa fa-comments" aria-hidden="true"></i>
+                          <a href="#">22 Comments</a>
+                        </li>
+                        <li>
+                          <i class="fa fa-heart" aria-hidden="true"></i>
+                          <a href="#">54 Likes</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <p>
+                      Come aboard were expecting you. Love life's sweetest
+                      reward Let it flow it floats back to you. Sunday Monday
+                      Happy Days. Tuesday Wednesday Happy Days. Thursday
+                      Friday Happy Days.Saturday what a day all week with you.
+                    </p>
+                    <a href="blog-single.html"> Read More </a>
+                  </div>
+                </div>
+              </div>
+              <!--End single latest blog-->
+
+              <!--Start post pagination-->
+              <div class="row">
+                <div class="col-md-12">
+                  <ul class="post-pagination text-center">
+                    <li>
+                      <a href="#"
+                        ><i class="fa fa-caret-left" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa fa-caret-right" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!--End post pagination-->
+            </div>
+          </div>
+
+          <!--Start sidebar Wrapper-->
+          <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+            <div class="sidebar-wrapper">
+              <!--Start single sidebar-->
+              <div class="single-sidebar">
+                <form class="search-form" action="#">
+                  <input placeholder="Search..." type="text" />
+                  <button type="submit">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </form>
+              </div>
+              <!--End single sidebar-->
+              <!--Start single sidebar-->
+              <div class="single-sidebar">
+                <div class="sec-title">
+                  <h3>Categories</h3>
+                  <span class="border"></span>
+                </div>
+                <ul class="categories clearfix">
+                  <li>
+                    <a href="#"> Broken glass repair </a>
+                  </li>
+                  <li>
+                    <a href="#"> Game systems repair </a>
+                  </li>
+                  <li>
+                    <a href="#"> LCD TV repair </a>
+                  </li>
+                  <li>
+                    <a href="#"> Mac & PC repair </a>
+                  </li>
+                  <li>
+                    <a href="#"> Tablet & iPad repair </a>
+                  </li>
+                  <li>
+                    <a href="#"> Unlock your phone </a>
+                  </li>
+                  <li>
+                    <a href="#"> Water damage repair </a>
+                  </li>
+                </ul>
+              </div>
+              <!--End single sidebar-->
+              <!--Start single sidebar-->
+              <div class="single-sidebar">
+                <div class="sec-title">
+                  <h3>Recent News</h3>
+                  <span class="border"></span>
+                </div>
+                <ul class="recent-post">
+                  <li>
+                    <div class="img-holder">
+                      <img src="{% static 'images/blog/thumb1.png' %}" alt="Awesome Image" />
+                    </div>
+                    <div class="title-holder">
+                      <a href="#">
+                        <h5 class="post-title">
+                          Magnets and electric devices Lost data.
+                        </h5>
+                      </a>
+                      <h6 class="post-date">
+                        <i
+                          class="icon-calendar-with-spring-binder-and-date-blocks"
+                        ></i>
+                        Aug 11, 2020
+                      </h6>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="img-holder">
+                      <img src="{% static 'images/blog/thumb2.png' %}" alt="Awesome Image" />
+                    </div>
+                    <div class="title-holder">
+                      <a href="#">
+                        <h5 class="post-title">
+                          Best battery replace with batter service.
+                        </h5>
+                      </a>
+                      <h6 class="post-date">
+                        <i
+                          class="icon-calendar-with-spring-binder-and-date-blocks"
+                        ></i>
+                        Dec 28, 2013
+                      </h6>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="img-holder">
+                      <img src="{% static 'images/blog/thumb3.png' %}" alt="Awesome Image" />
+                    </div>
+                    <div class="title-holder">
+                      <a href="#">
+                        <h5 class="post-title">
+                          how to connect case fans to power.
+                        </h5>
+                      </a>
+                      <h6 class="post-date">
+                        <i
+                          class="icon-calendar-with-spring-binder-and-date-blocks"
+                        ></i>
+                        Nov 11, 2016
+                      </h6>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!--End single sidebar-->
+              <!--Start single-sidebar-->
+              <div class="single-sidebar">
+                <div class="singal-sidbar-add">
+                  <a href="#">
+                    <img src="{% static 'images/add.jpg' %}" alt="" />
+                  </a>
+                </div>
+              </div>
+              <!--End single-sidebar-->
+              <div class="single-sidebar popular-tag">
+                <div class="sec-title">
+                  <h3>Tag Cloud</h3>
+                  <span class="border"></span>
+                </div>
+                <ul class="popular-tag">
+                  <li><a href="#">Active</a></li>
+                  <li><a href="#">Building </a></li>
+                  <li><a href="#">Ideas</a></li>
+                  <li><a href="#">Energy</a></li>
+                  <li><a href="#">Engines</a></li>
+                  <li><a href="#">Chemical</a></li>
+                  <li><a href="#">Industry</a></li>
+                  <li><a href="#">Drilling</a></li>
+                </ul>
+              </div>
+              <!--End single-sidebar-->
+            </div>
+          </div>
+          <!--End Sidebar Wrapper-->
+        </div>
+      </div>
+    </div>
+
+    <div class="call-out2">
+      <div class="container">
+        <div class="clearfix">
+          <div class="float_left">
+            <h4>Have any question or need any business consultation?</h4>
+          </div>
+          <div class="float_right">
+            <a href="contact.html" class="thm-btn bg-clr2">Request Quote</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="brand-logo sec-padd">
+      <div class="container">
+        <ul class="brand-carousel">
+          <li>
+            <a href="#"><img src="{% static 'images/brand/1.png' %}" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="{% static 'images/brand/2.png' %}" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="{% static 'images/brand/3.png' %}" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="{% static 'images/brand/4.png' %}" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="{% static 'images/brand/5.png' %}" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="{% static 'images/brand/6.png' %}" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-main sec-padd2">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <div class="footer-col">
+                <div class="logo-part">
+                  <a href="index.html" class="footer-logo text-uppercase">
+                    <img src="{% static 'images/logo/logo2.png' %}" alt="logo" />
+                  </a>
+                </div>
+                <p class="footer-words">
+                  At Serviceswe are obsessed about gadgets and gizmos. We’re
+                  the folks standing in line on launch day waiting for the
+                  lates.
+                </p>
+                <ul class="list-inline footer-social">
+                  <li>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <div class="footer-col service-col">
+                <h3 class="footer-title">Services</h3>
+                <ul class="footer-list">
+                  <li><a href="#">Computer Repair</a></li>
+                  <li><a href="#">Electronics Repair</a></li>
+                  <li><a href="#">Smartphone Repair</a></li>
+                  <li><a href="#">Console Repair</a></li>
+                  <li><a href="#">Electronics Recovery</a></li>
+                  <li><a href="#">App Download</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <div class="footer-col post-column">
+                <h3 class="footer-title">Recent News</h3>
+                <div class="post-list">
+                  <div class="post">
+                    <div class="post-thumb">
+                      <a href="#"><img src="{% static 'images/blog/i1.jpg' %}" alt="" /></a>
+                    </div>
+                    <a href="#"><h5>Why Your Computer Hates You.</h5></a>
+                    <div class="post-info">
+                      <i class="fa fa-calendar"></i> 20 jun, 2020
+                    </div>
+                  </div>
+                  <div class="post">
+                    <div class="post-thumb">
+                      <a href="#"><img src="{% static 'images/blog/i2.jpg' %}" alt="" /></a>
+                    </div>
+                    <a href="#"
+                      ><h5>Easy Tips To Mobile Repair on chip.</h5></a
+                    >
+                    <div class="post-info">
+                      <i class="fa fa-calendar"></i> 21 Apr, 2020
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <div class="footer-col">
+                <h3 class="footer-title">Subscribe Us</h3>
+                <div class="footer-widget contact-column">
+                  <h5>Subscribe to our newsletter!</h5>
+                  <form action="#">
+                    <input type="email" placeholder="Email address...." />
+                    <button type="submit">
+                      <i class="fa fa-paper-plane"></i>
+                    </button>
+                  </form>
+                  <p>We dont’t do spam and Your mail id very confidential.</p>
+
+                  <ul class="social-icon">
+                    <li>
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-google-plus"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-feed"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-skype"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <p class="copyright">© 2022 services all rights reserved</p>
+            </div>
+            <div class="col-md-9">
+              <nav class="footer-menu pull-right">
+                <ul class="list-inline">
+                  <li><a href="index-2.html">home</a></li>
+                  <li><a href="our-service-1.html">services</a></li>
+                  <li><a href="#">term &amp; condition</a></li>
+                  <li><a href="#">privacy policy</a></li>
+                  <li><a href="contact-us.html">contact us</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--Scroll to top-->
+    <div class="scroll-to-top scroll-to-target" data-target="html">
+      <span class="fa fa-angle-up"></span>
+    </div>
+  </div>
 {% endblock blog %}
